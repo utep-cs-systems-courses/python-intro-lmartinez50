@@ -45,6 +45,11 @@ with open(inputFName, 'r') as thisFile:
 # Write to output file
 file = open(outputFName, "w+")
 
+# Sort words
+for word, index in sorted(words.items()):
+
+        file.write(word + " " + str(index) + "\n")
+
 # Close the file
 file.close() # close the output file when done
 
